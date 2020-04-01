@@ -1,0 +1,16 @@
+.header {
+    background: white;
+}
+
+.header h1 {
+    margin: 0;
+    padding-top: 75px;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    font-family: serif;
+}
+
+/* .form-inline {
+  
+} */
