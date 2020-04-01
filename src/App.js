@@ -1,35 +1,30 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import Header from "./components/Header";
 import users from "./utils/users.json";
-// import Search from "./components/Search";
-import EmployeeDisplay from "./components/EmployeeDisplay";
+import Search from "./components/Search";
+import EmployeeCard from "./components/EmployeeCard";
 import API from './utils/API';
+import EmployeeWrapper from "./components/EmployeeWrapper"
+
 
 class App extends React.Component {
-
   state = {
     employees: []
   };
-
-  componentDidMount() {
-    API.getMany(25)
-    .then(res => this.setState({ employees: res.data}))
-    .catch(err => console.log(err);
-    )
+  componentDidMount () {
+    API.getMany(50)
+    .then(res => this.setState({ employees:res.data}))
+    .catch(err => console.log(err));
   }
-  const [theUsers, setTheUsers]=useState(users)
-  const [masterList, setMasterList]=useState(users)
-  const [searchTerm, setSearchTerm]=useState("")
-  const handleSearchChange(term)=>{
-    setSearchTerm(term)
-  }
-  return (
-    <div className="App">
-      <Header searchTerm={searchTerm} handler={handleSearchChange}/>
-      <EmployeeWrapper users={theUsers} />
-    </div>
-  );
-}
-
+  render() {
+    return (
+      <div className="table">
+        <Header />
+        <Search />
+        <EmployeeWrapper employees={this.state.employees} />
+      </div>
+    );
+  };
+};
 export default App;

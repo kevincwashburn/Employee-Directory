@@ -12,7 +12,7 @@ function Header() {
           placeholder="Search"
           aria-label="Search"
         />
-        <Search 
+        
       </form>
     </header>
   );
