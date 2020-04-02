@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from "./components/Header";
-import users from "./utils/users.json";
 import Search from "./components/Search";
-import EmployeeCard from "./components/EmployeeCard";
+// import EmployeeCard from "./components/EmployeeCard";
 import API from './utils/API';
 import EmployeeWrapper from "./components/EmployeeWrapper"
 

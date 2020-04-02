@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/body.css";
-// import users from "../utils/users.json"
 
 function EmployeeCard(props) {
     return (
@@ -8,7 +7,8 @@ function EmployeeCard(props) {
             <td>
                 <img src={props.picture} alt="" />
             </td>
-            <td>{props.first} {props.last}</td>
+            <td>{props.first}</td>
+            <td>{props.last}</td>
             <td>{props.phone}</td>
             <td>{props.email}</td>
             <td>{props.dob}</td>
