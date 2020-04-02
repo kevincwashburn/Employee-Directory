@@ -2,10 +2,9 @@ import React from 'react';
 import './App.css';
 import Header from "./components/Header";
 import Search from "./components/Search";
-// import EmployeeCard from "./components/EmployeeCard";
+// import Employee from "./components/EmployeeCard";
 import API from './utils/API';
-import EmployeeWrapper from "./components/EmployeeWrapper"
-
+import EmployeeWrapper from "./components/EmployeeWrapper";
 
 class App extends React.Component {
   state = {

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/body.css";
 
-function EmployeeCard(props) {
+function Employee(props) {
     return (
         <tr>
             <td>
@@ -16,4 +16,4 @@ function EmployeeCard(props) {
     )
 }
 
-export default EmployeeCard;
+export default Employee;

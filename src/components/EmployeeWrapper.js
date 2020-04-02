@@ -1,6 +1,6 @@
 import React from "react";
-// import "./styles/style.css";
-import EmployeeCard from "./EmployeeCard";
+// import "../styles/style.css";
+import Employee from "./EmployeeCard";
 
 
 function EmployeeWrapper (props) {
@@ -18,7 +18,7 @@ function EmployeeWrapper (props) {
           </thead>
           <tbody>
           {props.employees.map(employee => (
-      <EmployeeCard
+      <Employee
           key={employee.login.uuid}
           picture={employee.picture.thumbnail}
           first={employee.name.first}
