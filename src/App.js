@@ -12,7 +12,9 @@ class App extends React.Component {
   };
   componentDidMount () {
     API.getMany(50)
-    .then(res => this.setState({ employees:res.data}))
+    .then(res => {
+      console.log(res)
+      this.setState({ employees:res.data.results})})
     .catch(err => console.log(err));
   }
   render() {
