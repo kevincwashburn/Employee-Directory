@@ -42,5 +42,7 @@ npm run test
 If you have any questions about the repo, open an issue or contact [kevincwashburn](https://api.github.com/users/kevincwashburn) directly at kevincwashburn@gmail.com.
 
 Link to Deployed Site:
-https://apple-cake-30182.herokuapp.com/
+https://young-lowlands-86522.herokuapp.com/
 
+Screenshot:
+![deployed-png](/public/assets/images/screenshot.png)
